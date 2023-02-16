@@ -1,0 +1,89 @@
+img {
+    display: block;
+    border: solid;
+    border-radius: 10px;
+    border-color: #956903;
+    padding: 0;
+    border-width: medium;
+    margin: 10px;
+    width: 50%;
+}
+
+body main img:nth-child(2n) {
+    border-color: pink;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 5px;
+    background-color: #95690300;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    color: #956903;
+}
+
+nav a:active {
+    background-color: pink;
+    color: #ffffff;
+}
+
+.current {
+    text-decoration: underline overline pink;
+    font-style: bold;
+    background-color: pink;
+}
+
+p {
+    
+
+}
+
+body {
+	padding: 10px 10px 10px 45px;
+	background-color: #9569031c;
+	font-size: 12pt;
+    line-height: 1.5;
+    margin: 15px;
+    font-family: 'Roboto';
+}
+
+h1{
+    font-size: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+h2{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 25px 0 25px 0
+}
+
+dt{
+    font-size: 18pt;
+}
+
+dd{
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+
+p{
+    font-style: bold;
+    margin-bottom: 15px;
+}
+
+header{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer{
+    font-size: smaller;
+}
+
