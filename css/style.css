@@ -2,21 +2,46 @@ img {
     display: block;
     border: solid;
     border-radius: 10px;
-    border-color: #956903;
+    border: #956903 solid 1px;
     padding: 0;
     border-width: medium;
-    margin: 10px;
-    width: 50%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-body main img:nth-child(2n) {
-    border-color: pink;
+img:hover {
+    opacity: 100%;
+    zoom: 2;
 }
+
+a.skip {
+    position: absolute;
+    top: -200px;
+    left: -400px;
+}
+
+a.skip:focus{
+    text-decoration-line: overline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: yellow;
+    background-color: #ffffff;
+    outline: none;
+    top: 0;
+    left: 0;
+  }
+
+
+/* body main img:nth-child(2n) {
+    border-color: pink;
+} */
 
 nav ul{
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
     padding: 5px;
-    background-color: #95690300;
+    background: #95690300;
     text-align: center;
 }
 
@@ -24,7 +49,16 @@ nav li {
     display: inline-block;
     padding: 0 20px 0 20px;
     align-items: center;
-    color: #956903;
+    background-color: floralwhite;
+    border: pink 3px solid;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav li:hover {
+    background-color: lavender;
+    opacity: 100%;
 }
 
 nav a:active {
@@ -33,57 +67,128 @@ nav a:active {
 }
 
 .current {
-    text-decoration: underline overline pink;
-    font-style: bold;
-    background-color: pink;
+    text-decoration: underline overline #956903;
+    background-color: lavender;
 }
 
-p {
-    
-
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    background-color: #ffdfe5;
+    border: #956903 solid 1px;
 }
+
 
 body {
-	padding: 10px 10px 10px 45px;
-	background-color: #9569031c;
+	padding: 10px 30px 10px 30px;
+	background-color: #ffdfe5;
 	font-size: 12pt;
     line-height: 1.5;
     margin: 15px;
-    font-family: 'Roboto';
+    font-family: 'Lora', serif;
+    height: 100%;
+    background-image: url("../images/background_pink_flower.jpeg");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    border-radius: 15px;
+    opacity: 93%;
 }
 
 h1{
-    font-size: 48px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50pt;
+    font-family: 'Roboto Slab', serif, 'Lora', serif, 'Georgia', serif, 'Times New Roman', Times, serif;
     margin-bottom: 25px;
     margin-top: 25px;
+    text-align: center;
+    background-color: #ffdfe5;
+    border: #956903 solid 1px;
+    border-radius: 15px;
 }
 
 h2{
-    font-size: 24px;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 25px 0 25px 0
+    font-size: 30pt;
+    font-family: 'Lora', serif, 'Georgia', serif, 'Times New Roman', Times, serif;
+    margin: 25px 0 5px 0;
+    padding: 0 0 0 10px;
+}
+
+h3{
+    font-size: 23pt;
+    font-family: 'Lora', serif, 'Georgia', serif, 'Times New Roman', Times, serif;
+    padding: 0 0 0 10px;
 }
 
 dt{
-    font-size: 18pt;
+    font-size: 24pt;
+    margin: 5px;
+    text-align: center;
 }
 
 dd{
-    font-size: 14pt;
+    font-size: 20pt;
+    margin: 10px;
     margin-bottom: 10px;
+}
+
+dl {
+    background-color: #ffdfe5;
+    opacity: 93%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: #956903 solid 1px;
 }
 
 p{
     font-style: bold;
+    font-size: 18pt;
+    padding: 15px;
     margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 15px;
+    font-size: 16pt;
 }
 
 header{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    opacity: 93%;
+    text-align: center;
 }
 
 footer{
     font-size: smaller;
+    background-color: #ffdfe5;
+    text-align: center;
 }
 
+.fa-smile-o {
+    color: purple;
+}
+
+.fade-in-text {
+    animation: fadeIn 1s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion) {
+    .fade-in-text {
+        animation: none;
+    }
+  }
+
+/* @media only screen and (min-width: 768px) {
+ two column grids for tablet view
+} */

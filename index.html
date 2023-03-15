@@ -10,14 +10,20 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- connect to a Google font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- connect to a Font Aweseom font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- connect to a favicon -->
 
   <title>Women's Web</title>
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to Main Content</a>
   <header>
     <nav>
         <ul>
@@ -27,13 +33,16 @@
           <li><a href="femdict.html">Feminist Dictionary</a></li>
         </ul>
     </nav>
-    <h1> Woman's Web </h1>
+    <h1 class="fade-in-text"> Woman's Web </h1>
   </header>
 
-  <main>
+  <main id=main>
+    <div class="parallax"></div>
     <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March">
+    
 
-    <div>
+    <dl>
+      <div>
       <p>
         This website started as an idea when Kelsey Toporski was a freshman in college taking my first <a href="https://lsa.umich.edu/women"> Women's Studies</a> class. As a junior, she had the skill set to make it happen. Growing up in a small, rural, conservative town, this class was really her first introduction to feminism and feminist thought, and she wanted to share her new found knowledge with others. This website is where a lot of feminist things could be compiled in one place, purely because people might not otherwise know about it. Her hometown may not have been forward thinking, but it did have internet connection.
       </p>
@@ -41,36 +50,45 @@
         This website currently contains 3 pages other than this one - click below to see a short description of each!
       </p>
     </div>
+  </dl>
 
-      <h2>Literature</h2>
+<dl>
+<h2>Literature</h2>
       <div>
         <p>
           This page features books written by women and for women, books and essays about feminism, poems, plays, and bios of female writers.
         </p>
       </div>
+    </dl>
+  <dl>
       <h2>History / Politics</h2>
       <div>
         <p>
           This page features bios of important women in history and women currently in Congress or otherwise politically involved.
         </p>
       </div>
+    </dl>
+  <dl>
       <h2>Feminist Dictionary</h2>
       <div>
         <p>
           This page features a collection of important feminist terminology that might make reading easier. These will include formal definitions and my own understandings of the terms.
         </p>
       </div>
+    </dl>
 
+    <dl>
     <div>
       <p>
         <span>Kelsey's DISCLAIMER:</span> I did not know everything!! I'm only human - I'm still growing and learning and I have a limited knowledge of things, but I will do my best and work to make this page as inclusive and unbiased as possible.
       </p>
     </div>
+  </dl>
   </main>
 
   <footer>
     <p class="thanks">
-      Thanks for visiting! <i></i>
+      Thanks for visiting! <i class="fa fa-smile-o"></i>
     </p>
     <p>Orginal content created by Kelsey Toporski 2019</p>
     <a href="#main">Back to Top</a>
