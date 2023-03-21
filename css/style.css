@@ -55,9 +55,19 @@ nav li {
     margin: 5px;
     padding: 5px;
 }
+@keyframes bounce {
+    70% { transform:translateY(0%); }
+    80% { transform:translateY(-15%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+}
+
 
 nav li:hover {
-    background-color: lavender;
+    background-color: pink;
     opacity: 100%;
 }
 
@@ -67,8 +77,9 @@ nav a:active {
 }
 
 .current {
-    text-decoration: underline overline #956903;
+    text-decoration: underline #956903;
     background-color: lavender;
+    animation: bounce 1.5s ease 2;
 }
 
 .container {
@@ -187,6 +198,10 @@ footer{
 
   @media (prefers-reduced-motion) {
     .fade-in-text {
+        animation: none;
+    }
+
+    .current {
         animation: none;
     }
   }
